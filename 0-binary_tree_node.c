@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stlib.h>
-
 #include <stdlib.h>
 
 struct binary_tree_t{
