@@ -1,15 +1,14 @@
-#include <stdio.h>
 #include <stdlib.h>
 
-struct binary_tree_t{
+struct binary_tree_s {
     int value;
-    struct binary_tree_t *parent;
-    struct binary_tree_t *left;
-    struct binary_tree_t *right;
+    struct binary_tree_s *parent;
+    struct binary_tree_s *left;
+    struct binary_tree_s *right;
 };
 
-struct binary_tree_t *binary_tree_node(struct binary_tree_t *parent, int value) {
-    struct binary_tree_t *new_node = malloc(sizeof(struct binary_tree_t));
+struct binary_tree_s *binary_tree_node(struct binary_tree_s *parent, int value) {
+    struct binary_tree_s *new_node = malloc(sizeof(struct binary_tree_s));
     if (new_node == NULL) {
         return NULL;
     }
@@ -21,3 +20,4 @@ struct binary_tree_t *binary_tree_node(struct binary_tree_t *parent, int value) 
 
     return new_node;
 }
+
