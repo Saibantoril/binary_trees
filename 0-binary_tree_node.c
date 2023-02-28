@@ -20,4 +20,3 @@ struct binary_tree_s *binary_tree_node(struct binary_tree_s *parent, int value) 
 
     return new_node;
 }
-
