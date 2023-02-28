@@ -1,12 +1,5 @@
+#include "binary_trees.h"
 #include <stdlib.h>
-
-/* Definition of binary tree node structure */
-typedef struct binary_tree_s {
-    int n;
-    struct binary_tree_s *parent;
-    struct binary_tree_s *left;
-    struct binary_tree_s *right;
-} binary_tree_t;
 
 /**
  * binary_tree_node - Creates a binary tree node
